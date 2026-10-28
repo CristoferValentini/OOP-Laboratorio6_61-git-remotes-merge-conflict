@@ -1,7 +1,14 @@
-int procNumber() {
-	return Runtime.getRuntime().availableProcessors();
-}
+public final class HelloWorld {
 
-void main() {
-	IO.println("This program is running in a PC with " + procNumber() + " logic processors!");
+	private static final String AUTHOR = "Danilo Pianini";
+
+	public static int procNumber() {
+		return Runtime.getRuntime().availableProcessors();
+	}
+
+	public static void main(final String[] args) {
+		IO.println("This program has been realised by " + AUTHOR);
+		IO.println("This program is running in a PC with " + procNumber());
+	}
+
 }
